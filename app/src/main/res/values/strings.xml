@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UploadMedia</string>
+    <string name="uploadImages">Set your image</string>
+    <string name="msg_loading">Loading...</string>
+</resources>
