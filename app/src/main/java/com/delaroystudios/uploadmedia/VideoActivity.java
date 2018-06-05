@@ -179,6 +179,8 @@ public class VideoActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                     video = data.getData();
                     videoPath = getPath(video);
+                    Toast.makeText(this, "this is it! " + videoPath, Toast.LENGTH_LONG).show();
+
                     initializePlayer(video);
                    // uploadFile(video.getPath());
 
