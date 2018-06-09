@@ -1,20 +1,15 @@
 package com.delaroystudios.uploadmedia;
 
 import android.app.ProgressDialog;
-import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.BaseColumns;
-import android.provider.MediaStore;
 import android.provider.OpenableColumns;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.MimeTypeMap;
 import android.widget.Toast;
 
 import com.delaroystudios.uploadmedia.networking.ApiConfig;
@@ -30,7 +25,6 @@ import com.nbsp.materialfilepicker.ui.FilePickerActivity;
 import com.shockwave.pdfium.PdfDocument;
 
 import java.io.File;
-import java.net.URI;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -179,6 +173,7 @@ public class PdfActivity extends AppCompatActivity implements OnPageChangeListen
     public void onPageError(int page, Throwable t) {
 
     }
+
 
     private void uploadFile() {
         if (pdfPath == null) {
